@@ -1,0 +1,53 @@
+<div class="wrapper">
+  <div class="box a">J</div>
+  <div class="box b">A</div>
+  <div class="box c">C</div>
+  <div class="box d">K</div>
+  <div class="box e">S</div>
+  <div class="box f">O</div>
+  <div class="box g">N</div>
+</div>
+
+<style>
+body {
+  margin: 40px;
+}
+
+.wrapper {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  grid-gap: 5px;
+  grid-template-areas: 
+    "main main header sidebar sidebar"
+    "footer footer footer footer side";
+}
+.a {
+  grid-area: main;
+  width: 65%;
+}
+.b{
+  grid-area: header;
+   width: 24%;
+}
+.c{
+  grid-area: sidebar;
+  width: 13%
+}
+.d{
+  grid-area: footer;
+  width: 175px;
+}
+.e{
+  grid-area: side;
+  width: 40px;
+}
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+</style>

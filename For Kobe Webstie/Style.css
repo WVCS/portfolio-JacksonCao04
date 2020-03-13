@@ -1,0 +1,21 @@
+ul {
+  List-style-type: none;
+  width: 100%;
+  overflow:hidden;
+  margin:0;
+  padding: 0;
+  background-color:purple;
+  postion:fixed;
+  top: 0;
+}
+li {
+  dispaly: inline;
+  float: left;
+}
+
+li a {
+  display: block;
+  text-decoration: none;
+  padding: 5px 50px;
+  color: Yellow;
+}
